@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'fantasia';
+    src: url('/fontes/Royalacid.ttf') format('truetype');
+    font-weight: normal;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+
+        --cor1: #A5A094;
+        --cor2: #CBCAC6;
+        --cor3: #7D8789;
+        --cor4: #C7C6C0;
+        --cor5: #3F4C4B;
+
+        --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+        --fonte-google: 'Press Start 2P', cursive;
+        --fonte-google-2: 'Courgette', cursive;
+        --fonte-local: 'fantasia', cursive;
+        --fonte-google-3: 'Caveat', cursive;
+        
+}
+
+body {
+        background-color: var(--cor2);
+        font-family: var(--fonte-padrao);
+}
+
+header {
+
+    background-image: linear-gradient(to bottom, var(--cor5), var(--cor3));
+    min-height: 150px;
+    text-align: center;
+    padding: 10px;
+  
+}
+header > h1 {
+
+    font-weight: normal;
+    font-size: 3em;
+    color: white;
+    font-family: var(--fonte-google);
+    text-shadow: 5px 4px 8px rgba(0, 0, 0, 0.61);
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+header > p {
+
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 1.5em;
+    font-family: var(--fonte-google-2);
+    text-shadow: 0px 4px 3px rgb(0 0 0 / 61%);
+}
+
+nav {
+
+    background-color: var(--cor3);
+    padding: 7px;
+    
+}
+
+nav a {
+        text-decoration: none;
+        padding: 5px;
+        font-weight: normal;
+        font-family: var(--fonte-padrao);
+        color: var(--cor1);
+        
+}
+
+nav a:hover {
+
+        text-decoration: underline;
+        color: var(--cor5);
+        background-color: var(--cor1);
+        border-radius: 10px 10px 10px 10px;
+        transition-duration: 1s;
+}
+
+main {
+
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    padding-bottom: 30px;
+    margin: auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 15px 15px 5px rgba(0, 0, 0, 0.192);
+}
+
+main  h1 {
+
+    font-family: var(--fonte-google-2);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    
+    
+    
+}
+main h2 {
+
+    font-family: var(--fonte-local);
+    font-size: 1.4em;
+    text-indent: 8px;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    margin-top: 10px;
+    
+    
+}
+
+main p {
+
+    padding: 20px 20px 20px 20px ;
+    text-indent: 15px;
+    text-align: justify;
+    font-family: var(--fonte-google-3);
+    font-size: 1.8em;
+}
+
+main p.texto {
+
+    text-align: center;
+}
+
+main img {
+
+    width: 100% ; 
+    
+}
+
+main img.foto {
+
+    max-width: 600px;
+    margin: auto;
+    display: block;
+}
+
+main img.fotorsa {
+
+    max-width: 970px;
+    max-height: 262px;
+    margin: auto;
+    display: block;
+}
+
+main img.altura {
+
+    max-width: 980px;
+    max-height: 242px;
+    margin: auto;
+    display: block;
+}
+
+main a {
+
+    text-decoration: none;
+    font-size: 0.8em;
+    color: black;
+}
+main a::after {
+
+    content: '\00A0\1F517';
+    
+}   
+
+main a:hover {
+
+    text-decoration: underline;
+    color: var(--cor3);
+}
+
+div.video {
+
+    background-color: var(--cor4);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+}
+
+div.video > iframe {
+
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+
+    background-color: var(--cor2);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 12px 10px 10px 10px;
+}
+
+aside h3 {
+
+    padding: 10px;
+    font-family: var(--fonte-google-2);
+    font-size: 20px;
+}
+
+aside ul {
+
+    list-style-position: inside;
+    columns: 2;
+    font-weight: bolder;
+   
+}
+
+aside ul > li.atari::after {
+
+        content: '\00A0\1F579';
+}
+
+aside ul > li.snes::after {
+
+    content: '\00A0\1F3AE';
+}
+
+footer {
+    background-color: var(--cor4);
+    padding-top: 5px;
+    padding-left: 5px;
+    text-align: center;
+    font-size: 0.8em;   
+    
+}
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+
+    text-decoration: underline;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    border-radius: 5px;
+    padding: 3px;
+}
