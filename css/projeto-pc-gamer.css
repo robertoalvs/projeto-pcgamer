@@ -6,64 +6,39 @@
     margin: 0;
 }
 
-body {
+:root {
 
-    background-color: #ffff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+    --color1: #1d3d76;
+    --color2: #b74e07;
+    --color3: #597dbd;
+    --color4: #f3cfb6;
+    --color5: #f5f8fa;
+    --color6: #fef6f8;
+ }
 
-#container {
+ body {
 
+    line-height: 1;
+    font: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 20px;
+ }
+
+ #container {
+
+    background-image: url(../imagens/original-rsa-pc-gamer.png);
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    width: 90%;
+    max-width: 950px;
+    margin: 20px auto;
+
+ }
+
+ #pagina {
+
+    background-color: white;
+    width: 97%;
     max-width: 940px;
-    height: 100vh;
-    margin: auto;
-    background-image: url(../estudando-o-livro-002/img/bg-bluebench.jpg);
-    background-repeat: bottom;
-    padding: 30px 20px 0 0;
-}
-
-#pagina {
-
-   
-    max-width: 940px;
-    height: 100vh;
-    margin: auto;
-    background-color: #ffff;
-}
-
-#header {
-
-    max-width: 940px;
-    height: 90px;
-    background-color: rgb(115, 115, 179);
-}
-
-#nav {
-
-    max-width: 500px;
-    height: 50px;
-    background-color: aqua;
-    
-}
-
-#main {
-
-    max-width: 640px;
-    width: 80%;
-    background-color: chocolate;
-    float: left;
-    position: absolute;
-}
-
-#aside {
-
-    background-color: cornflowerblue;
-    width: 20px;
-    height: 100%;
-    float: right;
-}
-
-#footer {
-
-    clear: both;
-}
+    padding: 10px 10px 10px 0;
+ }
