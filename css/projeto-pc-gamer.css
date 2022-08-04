@@ -31,6 +31,7 @@
     font: 100%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-bottom: 20px;
+    color: var(--color1);
  }
 
  #container {
@@ -41,13 +42,158 @@
     width: 90%;
     max-width: 950px;
     margin: 20px auto;
+    padding: 30px 10px 0 0;
 
  }
 
  #pagina {
 
     background-color: white;
-    width: 97%;
+    width: 97.9167%;
     max-width: 940px;
     padding: 10px 10px 10px 0;
+ }
+
+ header {
+
+   margin-bottom: 30px;
+   border-bottom: 2px dotted var(--color1);
+   padding-bottom: 20px;
+ }
+
+ header div {
+
+   float: right;
+   position: relative;
+ }
+
+ nav >ul li {
+
+   padding: 10px;
+   float: right;
+   list-style-position: inside;
+ }
+
+
+ .logo {
+
+   float: left;
+   font-size: 2.5em;
+   margin: 0;
+   font-weight: bolder;
+ }
+
+ span {
+
+   font-size: 0.3em;
+   display: block;
+   margin: 3px 0 0 1em;
+   font-style: italic;
+ }
+
+ 
+main {
+
+   width: 71%;
+   float: left;
+}
+
+h1 {
+
+   font-size: 1.5em;
+   margin-bottom: .75em;
+   text-transform: lowercase;
+   color: var(--color2);
+}
+
+h2 {
+   font-size: 1.3em;
+   padding: 5px 0 7px 0;
+   color: var(--color1);
+
+}
+
+.sessao1 img, .sessao2 img, .sessao3 img {
+
+   float: left;
+}
+
+.sessao2 img {
+
+   width: 111px;
+   height: 75px;
+}
+
+.sessao1 p, .sessao2 p, .sessao3 p {
+
+   margin: -5px 15px 0 110px;
+   text-align: justify;
+   line-height: normal;
+}
+
+.sessao1, .sessao2, .sessao3 {
+
+   margin: 0 .5em 2em 0;
+   border-right: 2px dashed var(--color2);
+} 
+
+section .data {
+
+   line-height: 1;
+   margin: 0 1em 0 0;
+   padding: 0;
+   position: relative;
+   top: -1.3em;
+   text-align: end;
+   font-size: .75em;
+
+}
+
+ aside {
+
+   background-color: var(--color5);
+   margin-left: 72%;
+   padding: 10px;
+ }
+
+ aside h3 {
+
+   font-size: .9375em;
+   margin-bottom: 3px;
+   text-transform: lowercase;
+
+ }
+
+ aside h3 {
+
+   color: var(--color2);
+   font-style: italic;
+   text-transform: lowercase;
+ }
+
+ aside p {
+
+   padding: 5px 5px 5px 0;
+   font-size: .78em;
+   font-style: italic;
+   line-height: normal;
+   
+ }
+
+ aside ol {
+
+    padding-top: 10px;
+    text-align: end;
+    list-style-position: inside;
+    list-style-type: circle;
+   
+ }
+
+ footer {
+   margin-top: 10px;
+   clear: both;
+   padding-top: 5px;
+   border-top: 2px dotted var(--color2);
+   font-size: .75em;
+   
  }
