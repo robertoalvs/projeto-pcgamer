@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 
 * {
 
@@ -14,6 +16,8 @@
     --color4: #f3cfb6;
     --color5: #f5f8fa;
     --color6: #fef6f8;
+    --fonte: 'Coiny', cursive;
+    --fonte-menu: 'Lobster Two', cursive;
  }
 
 
@@ -61,26 +65,64 @@
    padding-bottom: 20px;
  }
 
+ /* div criada para agrupo o a ( ol e a ul com float)
+ */
  header div {
 
    float: right;
    position: relative;
  }
 
+nav {
+
+   margin-top: 45px;
+}
+
  nav >ul li {
 
-   padding: 10px;
-   float: right;
+   padding: 0 10px 0 3px;
+   float: left;
    list-style-position: inside;
+   font-family: var(--fonte-menu);
+   font-size: 1.30em;
+ }
+#form >ol >li a:hover {
+
+   background-color: transparent;
+   text-decoration: none;
+   padding: 0;
+}
+ #form >ol li {
+
+   display: inline-block;
+   padding: 0 0 0 15px;
+   list-style: none;
  }
 
+ #form {
 
+   position: absolute;
+   top: -50px;
+   right: 0;
+ }
+
+ #form >ol .youtube {
+
+   padding-left: 3px;
+ }
+
+ .ul-li-home {
+
+   list-style: none;
+ }
+ 
  .logo {
 
    float: left;
    font-size: 2.5em;
    margin: 0;
-   font-weight: bolder;
+   font-family: var(--fonte);
+   padding-top: 8px;
  }
 
  span {
@@ -89,15 +131,19 @@
    display: block;
    margin: 3px 0 0 1em;
    font-style: italic;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
  }
 
- 
+
 main {
 
    width: 71%;
    float: left;
 }
 
+/*
+====================== H1 E H2 GERAL ==============================
+*/
 h1 {
 
    font-size: 1.5em;
@@ -110,8 +156,28 @@ h2 {
    font-size: 1.3em;
    padding: 5px 0 7px 0;
    color: var(--color1);
-
 }
+/* ================================== FIM ========================
+*/
+
+/*
+============================== LINKS ==============================
+*/
+a {
+
+   text-decoration: none;
+}
+
+a:hover {
+
+   text-decoration: underline;
+   background-color: var(--color4);
+   padding: 3px 5px 5px 3px;
+}
+
+/*
+=========================FIM CONF..LINK============================
+*/
 
 .sessao1 img, .sessao2 img, .sessao3 img {
 
