@@ -16,6 +16,15 @@
     --color6: #fef6f8;
  }
 
+
+/* Contain floats: h5bp.com/q */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+
+
  body {
 
     line-height: 1;
