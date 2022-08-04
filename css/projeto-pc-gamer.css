@@ -166,6 +166,7 @@ h2 {
 a {
 
    text-decoration: none;
+   color: var(--color3);
 }
 
 a:hover {
