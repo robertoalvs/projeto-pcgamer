@@ -264,3 +264,14 @@ section .data {
    font-size: .75em;
    
  }
+
+ footer ul {
+
+   vertical-align: middle;
+   
+ }
+ footer >ul li {
+
+   display: inline-block;
+   padding-top: 5px;
+ }
