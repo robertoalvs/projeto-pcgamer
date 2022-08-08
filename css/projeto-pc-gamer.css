@@ -114,7 +114,7 @@ nav {
  .ul-li-home {
 
    list-style: none;
-   cursor: default;
+   cursor: crosshair;
  }
  
  .logo {
